@@ -9,6 +9,12 @@ export default {
 
 <template lang="">
 
+    <div class="container">
+        <div class="row">
+            
+        </div>
+    </div>
+
 </template>
 
 <style lang="scss" scoped>

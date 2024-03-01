@@ -25,11 +25,11 @@ export default {
   created(){
     this.getProjects();
   },
-  
+
   methods: {
     getProjects(){
       axios.get(this.store.apiUrl).then((response) =>{
-        this.projects = response.data
+        this.projects = response.data.results;
         console.log(this.projects);
       })
     }
@@ -39,9 +39,10 @@ export default {
 
 <template>
 
-<AppHeader/>
-<AppMain/>
-<AppFooter/>
+<AppHeader />
+<AppMain />
+<ProjectCard v-for="(project, index) in projects" :key="index" :project="project" />
+<AppFooter />
 
 </template>
 
