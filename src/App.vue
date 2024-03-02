@@ -41,7 +41,11 @@ export default {
 
 <AppHeader />
 <AppMain />
-<ProjectCard v-for="(project, index) in projects" :key="index" :project="project" />
+<div class="container">
+  <div class="row">
+    <ProjectCard v-for="(project, index) in projects" :key="index" :project="project" />
+  </div>
+</div>
 <AppFooter />
 
 </template>
