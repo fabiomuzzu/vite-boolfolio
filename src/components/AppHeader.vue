@@ -13,6 +13,7 @@ export default {
                     name: 'projects',
                     label: 'Projects',
                 },
+                
             ],
         };
     },
@@ -29,9 +30,9 @@ export default {
                         <h3>Logo</h3>
                     </div>
                     <div class="col-6">
-                        <ul class="list-unstyled">
-                            <li v-for="link, index in navLinks">
-                                <router-link class=" text-decoration-none" :to="{ name: link.name }">{{ link.label }}</router-link>
+                        <ul class="list-unstyled d-flex m-0 justify-content-end">
+                            <li class="px-3" v-for="link, index in navLinks">
+                                <router-link class="text-decoration-none text-dark" :to="{ name: link.name }">{{ link.label }}</router-link>
                             </li>
                         </ul>
                     </div>
