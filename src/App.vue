@@ -40,7 +40,7 @@ export default {
 <template>
 
 <AppHeader />
-<AppMain />
+<router-view></router-view>
 <div class="container">
   <div class="row">
     <ProjectCard v-for="(project, index) in projects" :key="index" :project="project" />
