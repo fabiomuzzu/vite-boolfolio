@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router';
 import AppHome from './pages/AppHome.vue';
 import Projects from './pages/Projects.vue';
 import AppNotFound from './pages/AppNotFound.vue';
+import ShowProject from './pages/ShowProject.vue';
+
 
 
 const router = createRouter({
@@ -16,6 +18,11 @@ const router = createRouter({
             path:'/projects',
             name: 'projects',
             component: Projects,
+        },
+        {
+            path: '/projects/:slug',
+            name: 'show-project',
+            component: ShowProject,
         },
         {
             path: '/:patchMatch(.*)*',
