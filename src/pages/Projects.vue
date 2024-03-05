@@ -22,7 +22,7 @@ export default {
 
     methods: {
         getProjects(){
-        axios.get(this.store.apiUrl).then((response) =>{
+        axios.get(`${this.store.apiUrl}/api/projects/`).then((response) =>{
             this.projects = response.data.results;
             console.log(this.projects);
         })

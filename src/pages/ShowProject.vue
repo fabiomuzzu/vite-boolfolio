@@ -28,7 +28,7 @@ import axios from 'axios';
 
 <template lang="">
     <div>
-        
+        <h1>{{ project.name }}</h1>
     </div>
 </template>
 
