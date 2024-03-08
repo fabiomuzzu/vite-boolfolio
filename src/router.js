@@ -4,6 +4,8 @@ import Projects from './pages/Projects.vue';
 import AppNotFound from './pages/AppNotFound.vue';
 import ShowProject from './pages/ShowProject.vue';
 import AppContactUs from './pages/AppContactUs.vue';
+import AppThanksPage from './pages/AppThanksPage.vue';
+
 
 
 
@@ -30,6 +32,11 @@ const router = createRouter({
             path: '/contact-us',
             name: 'contact-us',
             component: AppContactUs,
+        },
+        {
+            path: '/contact-us/thank-you',
+            name: 'thanks-you',
+            component: AppThanksPage,
         },
         {
             path: '/:patchMatch(.*)*',

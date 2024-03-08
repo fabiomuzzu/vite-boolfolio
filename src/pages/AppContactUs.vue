@@ -35,6 +35,9 @@ export default {
                     this.email = '';
                     this.description = '';
 
+                    this.$router.push({
+                        name: 'thanks-you',
+                    });
                 }
                 else{
                     this.errors = response.data.errors
