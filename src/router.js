@@ -3,6 +3,8 @@ import AppHome from './pages/AppHome.vue';
 import Projects from './pages/Projects.vue';
 import AppNotFound from './pages/AppNotFound.vue';
 import ShowProject from './pages/ShowProject.vue';
+import AppContactUs from './pages/AppContactUs.vue';
+
 
 
 
@@ -23,6 +25,11 @@ const router = createRouter({
             path: '/projects/:slug',
             name: 'show-project',
             component: ShowProject,
+        },
+        {
+            path: '/contact-us',
+            name: 'contact-us',
+            component: AppContactUs,
         },
         {
             path: '/:patchMatch(.*)*',
