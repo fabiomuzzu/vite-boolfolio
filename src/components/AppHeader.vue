@@ -49,7 +49,7 @@ export default {
 <style lang="scss" scoped>
 
 .hr_bg{
-    background-image: linear-gradient(90deg, #885DF1 0%, #F65282 100%);
+    background-image: linear-gradient(90deg, #2930ff 0%, #92faff 100%);
     
     .hr_col{
         width: 100%;
